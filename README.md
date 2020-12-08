@@ -9,7 +9,9 @@ Requirements :
 - Sublime Text 64 bits running
 - testlib64.dll in C:\TEMP
 
-Need a change in Syscalls.asm / NtCreateThreadEx10 and recompilation for different Windows 10 build (mov eax, 0bdh is for build 1909)
+Need a change in NtCreateThreadEx10 function (Syscalls.asm) and recompilation if Windows 10 build is not 1909 (mov eax, 0bdh is specific for build 1909)
+
+See https://j00ru.vexillium.org/syscalls/nt/64/ for required values.
 
 
 
